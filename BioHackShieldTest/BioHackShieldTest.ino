@@ -47,6 +47,7 @@ public:
     char movement = tbl[(state << 2) | t];
     if (movement != 0)
     {
+      Serial.println((int)t);
       value += movement;
       state = t;
       return true;
@@ -102,7 +103,6 @@ void scanI2C()
     }
   }
 }
-
 
 void setupLCD() {
   // Initialize I2C
@@ -168,7 +168,7 @@ void loop() {
   last_time = time;
 
   ledstate = 1-ledstate;
-//  digitalWrite(LED_PIN, ledstate); // alternate between 0 and 1   
+  digitalWrite(LED_PIN, ledstate); // alternate between 0 and 1   
 
   if(stepper_en) {  
     stepper_timer+=dt;
