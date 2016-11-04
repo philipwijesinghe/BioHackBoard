@@ -23,8 +23,11 @@
 
 BHA_Button::BHA_Button(int pin)
 {
+  // Define pinMode
   pinMode(pin, INPUT);
   _pin = pin;
+  
+  // Set initial values
   _lastDebounceTime = 0;  // the last time the output pin was toggled
   _debounceDelay = 500;    // the debounce time; increase if the output flickers
 }
