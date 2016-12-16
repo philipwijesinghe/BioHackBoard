@@ -1,6 +1,6 @@
 # BioHackBoard
 
-<img src="DSC_0710.jpg" alt="BioHack Board V2.0" style="width: 200px;" width=200 align="right" hspace=5 vspace=5 />
+<img src="DSC_0710.JPG" alt="BioHack Board V2.0" style="width: 200px;" width=200 align="right" hspace=5 vspace=5 />
 The BioHackBaord is an Arduino shield that aims to eliminate the need for any soldering or breadboard for the assembly of BHA devices. 
 
 The shield is able to drive a steppermotor, read a rotary encoders, 2 thermistors, control 2 MOSFETs and connect up to 3 I2C devices, such as an LCD screen.
